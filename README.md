@@ -41,8 +41,18 @@ dotnet run
 ```
 
 
-
 The terminal will output the local address where the application is listening (e.g., `http://localhost:5000` or `https://localhost:5001`).
+
+**Sample request:**
+```bash
+curl -X POST http://localhost:XXXX/api/v1/parse-content \
+-H "Content-Type: application/json" \
+-d '{
+  "type": "CSV",
+  "content": "aWQsbmFtZQoxLFRlc3Q="
+}'
+
+```
 
 ## 📖 API Documentation (Swagger)
 
