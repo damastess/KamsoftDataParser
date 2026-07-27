@@ -37,7 +37,7 @@ public class DataParserService : IDataParserService
             {
                 Status = OperationStatus.ERROR,
                 ProcessedCount = 0,
-                Data = $"Invailid Base64 data format: {ex.Message}"
+                Data = $"Invalid Base64 data format: {ex.Message}"
             };
         }
         catch (JsonException ex)
@@ -46,7 +46,7 @@ public class DataParserService : IDataParserService
             {
                 Status = OperationStatus.ERROR,
                 ProcessedCount = 0,
-                Data = $"Invailid JSON format: {ex.Message}"
+                Data = $"Invalid JSON format: {ex.Message}"
             };
         }
         catch (CsvHelperException ex)
@@ -55,7 +55,7 @@ public class DataParserService : IDataParserService
             {
                 Status = OperationStatus.ERROR,
                 ProcessedCount = 0,
-                Data = $"Invailid CSV format: {ex.Message}"
+                Data = $"Invalid CSV format: {ex.Message}"
             };
         }
         catch (Exception ex)
