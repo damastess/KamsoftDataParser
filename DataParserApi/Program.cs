@@ -20,3 +20,4 @@ if (app.Environment.IsDevelopment())
 
 app.MapParserEndpoints();
 app.Run();
+public partial class Program { }
